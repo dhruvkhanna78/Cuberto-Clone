@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Matter";
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+}
+
+#home #homemain .headings :hover{
+    color: black;
+    
+
+}
+
+#home{
+    width: 100%;
+   min-height: 100vh;
+    background-color: white;
+}
+
+#nav{
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+#nav img{
+    width: 6.5vw;
+}
+
+#nav a{
+    text-decoration: none;
+    font-size: 1.3vw ;
+    color: black;
+    font-weight: 600;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 16px;
+
+}
+
+#nav i{
+    font-size: 2vw;
+    margin-top:  5.3px;
+    cursor: pointer;
+}
+
+#right .links{
+    display: none;
+}
+
+.dropdown-menu {
+    position: fixed; /* Changed to fixed for a full-screen effect */
+    right: 0; /* Aligns the dropdown to the right side */
+    top: 20; /* Aligns the dropdown to the top */
+    width: 50%; /* Half the width of the screen */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(185, 172, 172, 0.8);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.dropdown-menu li {
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 50px 0; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.dropdown-menu li:hover {
+    background-color: rgba(150, 150, 150, 0.5); 
+    cursor: pointer;
+}
+
+.dropdown-menu li a{
+    font-size: 4vw;
+    text-decoration: none;
+    color: black;
+}
+
+#home #homemain{
+    padding: 13vw 10vw;
+    width: 100%;
+     
+}
+
+#homemain h1{
+    letter-spacing: -.1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.headings{
+    display: flex;
+    gap: 4vw;
+}
+
+#homemain .headings h1{
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    font-family: "Microsoft Sans Serif";
+    color: transparent;
+    -webkit-text-stroke: 0.01px black ;
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: -0.1vw;
+}
+
+#homelast{
+    padding: 5vw 15vw;
+}
+
+#homelast p{
+    width: 52%;
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: -0.08vw;
+}
+
+#homelast p::selection{
+    color: white;
+    background-color: black;
+}
+
+#featured{
+    padding: 10vw 15vw;
+}
+
+#featured h1{
+    font-size: 5vw;
+    font-weight: 700 ;
+}
+
+#featured #second{
+    color: transparent;
+    -webkit-text-stroke: 0.1px black;
+}
+
+#featured #second::selection{
+    color: black;
+    background-color: rgb(123, 114, 114);
+}
+
+#fimages{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+    justify-content: space-between;
+}
+
+#fleft{
+    width: 45%;
+    height: inherit;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.fleftelm{
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+   
+}
+
+#fright .images{
+    width: 90%;
+    height: 80%;
+    background-color: red;
+}
+
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#fleft .fleftelm h3{
+    line-height: 3;
+    font-size: 1.8vw;
+    font-weight:400;
+}
+
+#fleft .fleftelm h4{
+    margin: 1.5vw 0vw;
+    line-height: 3;
+    font-size: 1.3vw;
+    font-weight:500;
+    opacity: 0.8;
+
+}
+
+#fleft .fleftelm h1{
+    font-weight:500;
+    word-wrap:inherit;
+    font-size: 2.5vw;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    padding: 1.3vw 2.3vw;
+    border: 2px solid rgb(181, 181, 181);
+    border-radius: 100px;
+    background-color: white;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    width: 60%;
+    font-weight: 400;
+    font-size: 3.8vw;
+    line-height: 1;
+}
+
+#dev p{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    width: 60%;
+    word-spacing: .1vw;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide{
+    width: 30%;
+}
+
+.slide .image{
+    width: 100%;
+    height: 270px;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slide .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .tag{
+    padding: 1.2vw 1.5vw;
+    width: fit-content;
+    border-radius: 30px;
+    background-color: #dadada;
+    margin: 2vw ;
+}
+
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
